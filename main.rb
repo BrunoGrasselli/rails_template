@@ -1,5 +1,5 @@
-system "cp ~/projects/rails_template/Gemfile Gemfile"
-system "cp ~/projects/rails_template/.gitignore .gitignore"
+system "curl https://raw.github.com/BrunoGrasselli/rails_template/master/Gemfile -o Gemfile"
+system "curl https://raw.github.com/BrunoGrasselli/rails_template/master/.gitignore -o .gitignore"
 system "rm public/index.html"
 
 run "bundle install"
