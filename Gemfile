@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.2.1'
 
 gem 'sqlite3'
-gem 'devise', '~> 1.5.3'
+gem 'devise', '~> 2.0.0'
 gem 'thin'
 
 # Gems used only for assets and not required
