@@ -4,8 +4,8 @@ system 'rm -rf test/ public/index.html'
 
 run 'bundle install'
 
+generate 'rspec:install'
 generate 'devise:install'
 generate 'devise User'
-generate 'rspec:install'
 
 puts 'Done!'
