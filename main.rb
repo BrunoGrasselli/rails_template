@@ -12,12 +12,13 @@ run 'bundle install'
 application %{
     config.generators do |g|
       g.test_framework  :rspec, :fixture => true, :views => false
-      g.fixture_replacement :factory_girl, :dir => "spec/support/factories"
+      g.fixture_replacement :factory_girl, :dir => 'spec/support/factories'
     end
 }
 
 generate 'rspec:install'
 generate 'cucumber:install'
+generate 'pickle --path --email'
 generate 'devise:install'
 generate 'devise User'
 

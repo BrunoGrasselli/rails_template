@@ -4,6 +4,7 @@ This template will create a Rails application with:
 
 * Rspec
 * Cucumber
+* Pickle
 * Factory Girl
 * Devise
 * Thin
