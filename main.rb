@@ -9,6 +9,7 @@ system 'mkdir -p spec/support/factories'
 run 'bundle install'
 
 generate 'rspec:install'
+generate 'cucumber:install'
 generate 'devise:install'
 generate 'devise User'
 
