@@ -23,6 +23,6 @@ group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
   gem 'rspec-rails', '~> 2.8.1'
-  gem 'factory_girl', '~> 2.5.0'
+  gem 'factory_girl_rails', '~> 1.6.0'
 end
 
