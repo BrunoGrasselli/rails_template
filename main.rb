@@ -2,8 +2,8 @@ run 'rm -rf test/ public/index.html'
 run 'mkdir -p spec/support/factories features/support'
 append_file '.gitignore', '*.sw[op]'
 
-run 'curl https://raw.github.com/BrunoGrasselli/rails_template/master/application.html.erb -o app/views/layouts/application.html.erb'
-run 'curl https://raw.github.com/BrunoGrasselli/rails_template/master/factory_girl.rb -o features/support/factory_girl.rb'
+run 'curl https://raw.github.com/BrunoGrasselli/rails_template/master/templates/application.html.erb -o app/views/layouts/application.html.erb'
+run 'curl https://raw.github.com/BrunoGrasselli/rails_template/master/templates/factory_girl.rb -o features/support/factory_girl.rb'
 
 gem 'devise', '~> 2.0.0'
 gem 'thin'
