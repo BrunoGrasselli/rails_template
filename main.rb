@@ -35,4 +35,12 @@ generate 'pickle --path --email'
 generate 'devise:install'
 generate 'devise User'
 
+%w{development test}.each do |env|
+  rake 'db:migrate', :env => env
+end
+
+git :init
+git :add => '.'
+git :commit => '-a -m "Initial commit"'
+
 puts 'Done!'
