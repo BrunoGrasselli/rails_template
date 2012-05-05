@@ -6,7 +6,6 @@ This template will create a Rails application with:
 * Cucumber
 * Pickle
 * Factory Girl
-* Devise
 * Thin
 
 # Usage
