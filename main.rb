@@ -5,7 +5,6 @@ append_file '.gitignore', '*.sw[op]'
 run 'curl https://raw.github.com/BrunoGrasselli/rails_template/master/templates/application.html.erb -o app/views/layouts/application.html.erb'
 run 'curl https://raw.github.com/BrunoGrasselli/rails_template/master/templates/factory_girl.rb -o features/support/factory_girl.rb'
 
-gem 'devise', '~> 2.0.0'
 gem 'thin'
 
 gem_group :test do
@@ -32,8 +31,6 @@ run 'bundle install'
 generate 'rspec:install'
 generate 'cucumber:install'
 generate 'pickle --path --email'
-generate 'devise:install'
-generate 'devise User'
 
 %w{development test}.each do |env|
   rake 'db:migrate', :env => env
